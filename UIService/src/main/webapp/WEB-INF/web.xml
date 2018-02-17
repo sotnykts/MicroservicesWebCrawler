@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+  <listener>
+    <listener-class>com.j2core.sts.webcrawler.ui.service.EasyListener</listener-class>
+  </listener>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.accesslevel.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.accesslevel.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ChangeUserDataServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.user.ChangeUserDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangeUserDataServlet</servlet-name>
+    <url-pattern>/ChangeUserDataServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ChangeUserPassServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.user.ChangeUserPassServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangeUserPassServlet</servlet-name>
+    <url-pattern>/ChangeUserPassServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>NodesStatisticsServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.statistic.NodesStatisticsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NodesStatisticsServlet</servlet-name>
+    <url-pattern>/NodesStatisticsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminAddNewUserServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.usermanage.AdminAddNewUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminAddNewUserServlet</servlet-name>
+    <url-pattern>/AdminAddNewUserServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminFindUserServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.usermanage.AdminFindUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminFindUserServlet</servlet-name>
+    <url-pattern>/AdminFindUserServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminDeleteUserServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.usermanage.AdminDeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminDeleteUserServlet</servlet-name>
+    <url-pattern>/AdminDeleteUserServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminChangeUserDataServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.usermanage.AdminChangeUserDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminChangeUserDataServlet</servlet-name>
+    <url-pattern>/AdminChangeUserDataServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>StopNodeServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.manage.StopNodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StopNodeServlet</servlet-name>
+    <url-pattern>/StopNodeServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserStatisticServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.statistic.UserStatisticServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserStatisticServlet</servlet-name>
+    <url-pattern>/UserStatisticServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>StatisticServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.statistic.StatisticServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StatisticServlet</servlet-name>
+    <url-pattern>/StatisticServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ManageServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.manage.ManageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManageServlet</servlet-name>
+    <url-pattern>/ManageServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>NodeInformationServlet</servlet-name>
+    <servlet-class>com.j2core.sts.webcrawler.ui.controler.servlets.manage.NodeInformationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NodeInformationServlet</servlet-name>
+    <url-pattern>/NodeInformationServlet</url-pattern>
+  </servlet-mapping>
+
+  <display-name>WebCrawlerUI</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <filter>
+    <filter-name>VerificationFilter</filter-name>
+    <filter-class>com.j2core.sts.webcrawler.ui.filters.VerificationFilter</filter-class>
+    <init-param>
+      <param-name>active</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>VerificationFilter</filter-name>
+    <url-pattern>*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>AccessLevelFilter</filter-name>
+    <filter-class>com.j2core.sts.webcrawler.ui.filters.AccessLevelFilter</filter-class>
+    <init-param>
+      <param-name>active</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>AccessLevelFilter</filter-name>
+    <url-pattern>*</url-pattern>
+  </filter-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>

@@ -1,0 +1,35 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence"
+             version="2.0"
+             >
+
+    <persistence-unit name="crawler" transaction-type="RESOURCE_LOCAL">
+        <description>
+            Persistence unit for the JPA tutorial of the Hibernate Getting Started Guide
+        </description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.j2core.sts.webcrawler.dao.model.informationdto.UrlData</class>
+        <class>com.j2core.sts.webcrawler.dao.model.informationdto.PageInformation</class>
+        <class>com.j2core.sts.webcrawler.dao.model.informationdto.WordInformation</class>
+        <class>com.j2core.sts.webcrawler.dao.model.informationdto.NodeData</class>
+        <class>com.j2core.sts.webcrawler.dao.model.userdto.Permission</class>
+        <class>com.j2core.sts.webcrawler.dao.model.userdto.RolesGroup</class>
+        <class>com.j2core.sts.webcrawler.dao.model.userdto.UserData</class>
+
+        <properties>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/testCrawlerDB?createDatabaseIfNotExist=true"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="sts"/>
+            <property name="hibernate.connection.password" value="StsStsSts!2#"/>
+
+            <property name="hibernate.show_sql" value="false" />
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
