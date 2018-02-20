@@ -1,0 +1,15 @@
+References:
+
+1. Microservices. Martin Fowler https://martinfowler.com/articles/microservices.html
+
+2. Microservices from Theory to Practice. Creating Applications in IBM Bluemix Using the Microservices Approach 
+https://www.redbooks.ibm.com/redbooks/pdfs/sg248275.pdf
+
+3.Opinionated Introduction to a REST API Style - Webcast 
+https://www.youtube.com/watch?v=6UXc71O7htc&list=PLD_hy-T7Y3SDXDfb_c2pKqTdIyxZIg-od&index=1
+
+4. RESTful API Design - Pragmatic REST - Webinar https://www.youtube.com/watch?v=R8SIxZVaai4
+
+5. RESTful API Design - Second Edition - https://www.youtube.com/watch?v=QpAhXa12xvU
+
+6. Web API Design - https://pages.apigee.com/web-api-design-ebook-sr.html
